@@ -1,0 +1,32 @@
+package javaArrays;
+import java.util.Scanner;
+
+public class ArrayUpgradationOf3 {
+  public static void main(String[] args){
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Enter the number of elements you want: ");
+      int size = sc.nextInt();
+      int Numbers[] = new int[size];
+      System.out.print("Enter the Numbers: ");
+       for (int i = 0 ; i< size; i++){
+           Numbers[i] = sc.nextInt();
+       }
+      System.out.println("Enter the number you want to search : ");
+       int x = sc.nextInt();
+       boolean found = false;
+       for (int i = 0 ; i<Numbers.length; i++){
+           if (Numbers[i]==x){
+               System.out.println("Element found at : "+i);
+               found = true;
+
+           }
+
+
+       }
+       if (!found){
+           System.out.println("Element didn't present ");
+       }
+
+  }
+
+}
